@@ -1,0 +1,17 @@
+<div class='headline'> Find Polindrom for <%= @a_value.to_s.gsub(/\.0(?!\d+)/, '') %></div>
+
+<table border="1">
+<caption>Polindrom</caption>
+    <tr>
+     	<th>#</th>
+     	<th>number</th>
+    </tr>
+	<% @result_array.each_with_index do |x, i| %>
+		<tr><td><%= i+1 %></td><td><%= x %></td></tr>
+	<% end %>
+</table>
+
+<div><%= link_to t('repeat'), '/polindr/input' %></div>
+
+
+

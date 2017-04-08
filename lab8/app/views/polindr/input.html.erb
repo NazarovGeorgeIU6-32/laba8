@@ -1,0 +1,9 @@
+<div class='headline'>Polindrom calc</div>
+<div>
+    <%= form_tag('/polindr/result', :method => 'get') do %>
+        <%= label_tag('enter_number') %>
+        <%= text_field_tag(:a) %>
+        <br/><br/>
+        <%= submit_tag('claculate') %>
+    <% end %>
+</div>
